@@ -801,6 +801,11 @@
       "description": "Lekki worek na plecy, który lubi codzienne wyjścia.",
       "image": "zdjecia-kategorii/workoplecaki.jpg"
     },
-    "items": []
+    "items": [
+      {
+        "image": "zdjecia-produktow/workoplecaki/111.png",
+        "title": "111"
+      }
+    ]
   }
 }
