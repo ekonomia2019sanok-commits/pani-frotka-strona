@@ -1,0 +1,12 @@
+Tutaj dodaj zdjęcia kafelków kategorii na stronie głównej.
+
+Nazwy plików muszą być dokładnie takie:
+
+- torby.jpg
+- breloki.jpg
+- workoplecaki.jpg
+- frotki.jpg
+- boxy.jpg
+- kosmetyczki.jpg
+
+Po dodaniu albo podmianie zdjęcia odśwież index.html w przeglądarce.

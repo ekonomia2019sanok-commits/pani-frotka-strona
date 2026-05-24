@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torby | Pani_frotka</title>
+  <meta name="description" content="Ręcznie tworzone torby Pani_frotka.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-asset-prefix="../">
+  <header class="site-header">
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a class="brand" href="../index.html" aria-label="Pani_frotka">
+        <img class="brand__logo" src="../logo.jpg" alt="Logo Pani_frotka">
+        <span class="brand__name">Pani_frotka</span>
+      </a>
+      <div class="nav__links">
+        <a class="nav__link nav__link--accent social-link social-link--icon" href="https://www.facebook.com/profile.php?id=100089048411165" target="_blank" rel="noopener" aria-label="Facebook Pani_frotka" title="Facebook">
+          <span class="social-icon social-icon--facebook" aria-hidden="true"></span>
+        </a>
+        <a class="nav__link nav__link--accent social-link social-link--icon" href="https://www.instagram.com/pani_frotka" target="_blank" rel="noopener" aria-label="Instagram Pani_frotka" title="Instagram">
+          <span class="social-icon social-icon--instagram" aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category-hero">
+      <div class="category-hero__content">
+        <p class="eyebrow">Torby Pani_frotka</p>
+        <h1>Wybierz motyw na swoją torbę.</h1>
+        <p>
+          Wszystkie propozycje w tej sekcji są motywami na torby. Możesz przeglądać kolekcje,
+          wyszukać konkretny motyw i zapytać o zamówienie w wiadomości prywatnej.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#katalog">Przeglądaj kolekcje</a>
+          <a class="button button--light social-link" href="https://www.facebook.com/profile.php?id=100089048411165" target="_blank" rel="noopener">
+            <span class="social-icon social-icon--facebook" aria-hidden="true"></span>
+            Napisz
+          </a>
+        </div>
+      </div>
+      <aside class="category-side" aria-label="Informacja o zamówieniach">
+        <p>Ręcznie tworzone torby z wybranym motywem.</p>
+        <p>Zamówienia przez wiadomość prywatną.</p>
+        <p>Każdy detal dopracowany z sercem.</p>
+      </aside>
+    </section>
+
+    <section class="custom-request">
+      <div>
+        <p class="eyebrow">Projekt indywidualny</p>
+        <h2>Chcesz produkt z własnego projektu albo masz pomysł?</h2>
+        <p>Skontaktuj się, a możemy zaprojektować coś specjalnie dla Ciebie.</p>
+      </div>
+      <div class="social-actions">
+        <a class="button social-link" href="https://www.facebook.com/profile.php?id=100089048411165" target="_blank" rel="noopener"><span class="social-icon social-icon--facebook" aria-hidden="true"></span>Napisz</a>
+        <a class="button button--light social-link" href="https://www.instagram.com/pani_frotka" target="_blank" rel="noopener"><span class="social-icon social-icon--instagram" aria-hidden="true"></span>Napisz</a>
+      </div>
+    </section>
+
+    <section class="catalog" id="katalog">
+      <div class="section-title">
+        <p class="eyebrow">Katalog</p>
+        <h2>Torby</h2>
+      </div>
+
+      <div class="tools" aria-label="Narzędzia katalogu">
+        <label class="search" for="searchInput">
+          <span>Szukaj motywu</span>
+          <input id="searchInput" type="search" placeholder="np. kot, Solina, maki">
+        </label>
+        <div class="filters" id="filters" aria-label="Filtry kolekcji"></div>
+      </div>
+
+      <p class="summary" id="portfolioSummary" aria-live="polite"></p>
+      <div class="grid" id="portfolioGrid"></div>
+      <p class="empty" id="emptyState">Nie znaleziono propozycji pasujących do wybranych kryteriów.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Pani_frotka © <span id="year"></span>. Torby z wybranym motywem.</p>
+  </footer>
+
+  <script src="../data.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
