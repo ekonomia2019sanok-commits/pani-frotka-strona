@@ -1,6 +1,6 @@
 (function () {
   const consentKey = "paniFrotkaCookieConsent";
-  const analyticsId = "G-XXXXXXXXXX"; // Wklej tutaj swoje ID Google Analytics, np. G-ABC123XYZ.
+  const analyticsId = "G-4XV8VH2ZGF";
   const policyUrl = document.body.dataset.policyPath || "polityka-prywatnosci.html";
   let analyticsLoaded = false;
 
