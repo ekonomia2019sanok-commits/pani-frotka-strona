@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
   <header class="site-header">
@@ -25,8 +25,9 @@
       </button>
       <div class="nav__links" id="navLinks">
         <a href="#home">Strona główna</a>
+        <a href="o-mnie.html">O mnie</a>
         <a href="#produkty">Produkty</a>
-        <a href="#kontakt">Zamów</a>
+        <a href="#cennik">Cennik</a>
         <a href="#kontakt">Kontakt</a>
       </div>
     </nav>
@@ -57,6 +58,49 @@
         <h2>Kategorie</h2>
       </div>
       <div class="category-grid" id="categoryGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section pricing" id="cennik">
+      <div class="section__heading">
+        <p class="eyebrow">Cennik</p>
+        <h2>Ceny produktów</h2>
+        <p>Każdy projekt tworzę ręcznie, dlatego przy większych zmianach lub indywidualnym pomyśle cenę zawsze potwierdzam w wiadomości.</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <span>Torba</span>
+          <strong>80 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Workoplecak</span>
+          <strong>80 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Box: kosmetyczka, frotka, breloczek</span>
+          <strong>50 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Brelok bez napisu</span>
+          <strong>15 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Brelok z napisem jednostronnym</span>
+          <strong>20 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Brelok z napisem dwustronnym</span>
+          <strong>23 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Kosmetyczka</span>
+          <strong>25 zł</strong>
+        </article>
+        <article class="price-card">
+          <span>Frotka</span>
+          <strong>15 zł</strong>
+        </article>
+      </div>
+      <p class="pricing__note">Przy wysyłce należy doliczyć koszt dostawy.</p>
     </section>
 
     <section class="section contact" id="kontakt">
@@ -95,3 +139,5 @@
   <script src="cookie-banner.js?v=1"></script>
 </body>
 </html>
+
+

@@ -455,6 +455,186 @@ h1 {
   object-fit: contain;
 }
 
+.pricing {
+  scroll-margin-top: 96px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.price-card {
+  min-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 250, 246, 0.78);
+  box-shadow: var(--shadow-soft);
+}
+
+.price-card span {
+  color: rgba(64, 36, 27, 0.78);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.price-card strong {
+  color: var(--brown);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.95;
+}
+
+.pricing__note {
+  max-width: 720px;
+  margin: 22px auto 0;
+  padding: 16px 20px;
+  border: 1px solid rgba(201, 111, 69, 0.22);
+  border-radius: 999px;
+  background: rgba(242, 223, 207, 0.62);
+  color: var(--brown);
+  font-weight: 800;
+  text-align: center;
+}
+
+.about-page {
+  padding-top: clamp(46px, 8vw, 92px);
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(30px, 6vw, 72px);
+  align-items: center;
+}
+
+.about-hero__photo {
+  position: relative;
+  padding: 14px;
+  border: 1px solid rgba(201, 111, 69, 0.2);
+  border-radius: 34px;
+  background: rgba(255, 250, 246, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.about-hero__photo::after {
+  position: absolute;
+  right: -18px;
+  bottom: -18px;
+  width: 106px;
+  height: 106px;
+  border: 1px solid rgba(201, 111, 69, 0.28);
+  border-radius: 50%;
+  content: "";
+}
+
+.about-hero__photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.about-hero__copy h1 {
+  margin-bottom: 20px;
+  font-size: clamp(3.5rem, 9vw, 7.2rem);
+}
+
+.about-hero__copy p {
+  max-width: 680px;
+  color: rgba(64, 36, 27, 0.76);
+  font-size: 1.05rem;
+  line-height: 1.82;
+}
+
+.about-hero__lead {
+  color: var(--brown);
+  font-size: clamp(1.18rem, 2vw, 1.35rem);
+  font-weight: 700;
+}
+
+.works-section {
+  padding-top: clamp(34px, 6vw, 68px);
+}
+
+.work-slider {
+  position: relative;
+}
+
+.work-slider__track {
+  display: grid;
+  grid-auto-columns: minmax(260px, 360px);
+  grid-auto-flow: column;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 8px 4px 18px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.work-slide {
+  scroll-snap-align: start;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--cream);
+  box-shadow: var(--shadow-soft);
+}
+
+.work-slide img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.work-slide figcaption {
+  padding: 16px 18px 18px;
+  color: var(--brown);
+  font-weight: 800;
+}
+
+.slider-button {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 250, 246, 0.96);
+  color: var(--brown);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slider-button:hover {
+  color: var(--caramel);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.slider-button--prev {
+  left: -12px;
+}
+
+.slider-button--next {
+  right: -12px;
+}
+
 .category-card:hover img,
 .series-card:hover img,
 .pattern-card:hover img {
@@ -1032,8 +1212,13 @@ h1 {
   .hero,
   .order,
   .contact,
-  .form-contact {
+  .form-contact,
+  .about-hero {
     grid-template-columns: 1fr;
+  }
+
+  .price-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero__logo-card {
@@ -1118,9 +1303,31 @@ h1 {
   .category-grid,
   .series-grid,
   .pattern-grid,
+  .price-grid,
   .request-form,
   .request-form--contact {
     grid-template-columns: 1fr;
+  }
+
+  .pricing__note {
+    border-radius: 22px;
+  }
+
+  .about-hero__copy {
+    text-align: center;
+  }
+
+  .about-hero__copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work-slider__track {
+    grid-auto-columns: minmax(238px, 82vw);
+  }
+
+  .slider-button {
+    display: none;
   }
 
   .catalog__top {

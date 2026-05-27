@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O mnie | Pani-frotka</title>
+  <meta name="description" content="Poznaj Basię, która tworzy rękodzieło marki Pani-frotka.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=17">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Główne menu">
+      <a class="brand" href="index.html#home" aria-label="Pani-frotka - strona główna">
+        <img class="brand__logo" src="logo.jpg" alt="Logo Pani-frotka">
+        <span class="brand__name">Pani-frotka</span>
+      </a>
+      <div class="nav__links nav__links--static">
+        <a href="index.html#home">Strona główna</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#cennik">Cennik</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section about-page">
+      <div class="about-hero">
+        <div class="about-hero__photo">
+          <img src="assets/o-mnie/basia.jpg" alt="Basia, twórczyni marki Pani-frotka">
+        </div>
+        <div class="about-hero__copy">
+          <p class="eyebrow">O mnie</p>
+          <h1>Cześć, jestem Basia.</h1>
+          <p class="about-hero__lead">Tworzę rękodzieło pod marką Pani-frotka: torby, kosmetyczki, frotki, breloki i małe dodatki, które mają cieszyć na co dzień.</p>
+          <p>Najbardziej lubię moment, w którym pomysł zaczyna nabierać kształtu: wybór wzoru, dobór tkaniny, pierwsze przeszycia i ostatnie detale. Każdą rzecz przygotowuję z uważnością, tak aby była praktyczna, estetyczna i miała w sobie coś osobistego.</p>
+          <p>Jeśli masz własny pomysł, grafikę albo chcesz stworzyć prezent dla bliskiej osoby, napisz do mnie. Chętnie pomogę dobrać wzór i przygotować projekt specjalnie dla Ciebie.</p>
+          <a class="button" href="index.html#kontakt">Napisz do mnie</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works-section">
+      <div class="section__heading">
+        <p class="eyebrow">Moje prace</p>
+        <h2>Wybrane realizacje</h2>
+      </div>
+      <div class="work-slider">
+        <button class="slider-button slider-button--prev" type="button" aria-label="Poprzednie zdjęcia" data-slider-prev>‹</button>
+        <div class="work-slider__track" data-work-slider>
+          <figure class="work-slide">
+            <img src="assets/o-mnie/kosmetyczka.jpg" alt="Kosmetyczka handmade Pani-frotka">
+            <figcaption>Kosmetyczka handmade</figcaption>
+          </figure>
+          <figure class="work-slide">
+            <img src="assets/o-mnie/torba.jpg" alt="Kolorowa torba handmade Pani-frotka">
+            <figcaption>Torba z autorskim wzorem</figcaption>
+          </figure>
+          <figure class="work-slide">
+            <img src="assets/o-mnie/box.jpeg" alt="Box prezentowy handmade Pani-frotka">
+            <figcaption>Box prezentowy</figcaption>
+          </figure>
+          <figure class="work-slide">
+            <img src="zdjecia-produktow/breloki/BRE_1.jpg" alt="Brelok handmade Pani-frotka">
+            <figcaption>Brelok z personalizacją</figcaption>
+          </figure>
+          <figure class="work-slide">
+            <img src="zdjecia-produktow/breloki/BRE_2.jpg" alt="Brelok handmade Pani-frotka">
+            <figcaption>Mały dodatek na prezent</figcaption>
+          </figure>
+        </div>
+        <button class="slider-button slider-button--next" type="button" aria-label="Następne zdjęcia" data-slider-next>›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Pani-frotka © <span id="year"></span>. Handmade tworzone z sercem.</p>
+    <a class="footer__link" href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="about-slider.js?v=1"></script>
+  <script src="cookie-banner.js?v=1"></script>
+</body>
+</html>
+
+
